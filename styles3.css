@@ -26,6 +26,7 @@ nav {
   background-color: #0f0;
   grid-area: nav;
   height: 50vh;
+  font: 600px;
 }
 
 main {
@@ -36,4 +37,43 @@ main {
 footer {
   background-color: #000;
   grid-area: footer;
+  
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "navbar navbar navbar navbar "
+    "hero hero hero hero "
+    "sidebar content content content "
+    ". footer footer footer";
+     padding: 10px;
+}
+
+.navbar {
+    background-color: purple;
+    grid-area: header;
+    grid-area: nav;
+    height: 20vh;
+}
+.hero {
+    background-color: pink;
+    height: 25vh;
+}
+.content {
+    background-color: red;
+    height: 30vh;
+}
+.sidebar {
+    background-color: lightblue;
+    height: 30vh;
+}
+.footer {
+    background-color: yellow;
+    grid-area: footer;
+    height:75px;
+    
+    
 }
